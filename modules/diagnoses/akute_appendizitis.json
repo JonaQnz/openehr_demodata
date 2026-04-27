@@ -155,7 +155,7 @@
             },
             "value": {
               "_type": "DV_CODED_TEXT",
-              "value": "Moderate",
+              "value": "Mild",
               "defining_code": {
                 "_type": "CODE_PHRASE",
                 "terminology_id": {
@@ -248,7 +248,7 @@
                 },
                 "value": {
                   "_type": "DV_CODED_TEXT",
-                  "value": "Not controlled",
+                  "value": "Controlled",
                   "defining_code": {
                     "_type": "CODE_PHRASE",
                     "terminology_id": {
