@@ -1,0 +1,325 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "vg_Diagnosis.v1.1.0"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.report.v1"
+    },
+    "template_id": {
+      "value": "vg_Diagnosis.v1.1.0"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Max Mustermann"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2026-04-27T10:00:00+02:00"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "other care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "238"
+      }
+    },
+    "health_care_facility": {
+      "_type": "PARTY_IDENTIFIED",
+      "name": "Hausarztpraxis Test"
+    }
+  },
+  "content": [
+    {
+      "_type": "EVALUATION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "primary diagnosis"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "time_asserted": {
+        "_type": "DV_DATE_TIME",
+        "value": "2026-04-27T10:00:00+02:00"
+      },
+      "data": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "structure"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Problem/Diagnosis name"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Essentielle Hypertonie"
+            },
+            "archetype_node_id": "at0002"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Clinical description"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Bekannte arterielle Hypertonie ohne sekundäre Ursache. Aktuell unter antihypertensiver Therapie, Blutdruckwerte stabil im Zielbereich."
+            },
+            "archetype_node_id": "at0009"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Date/time clinically recognised"
+            },
+            "value": {
+              "_type": "DV_DATE_TIME",
+              "value": "2024-06-15T09:30:00+02:00"
+            },
+            "archetype_node_id": "at0003"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Severity"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Mild",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at0047"
+              }
+            },
+            "archetype_node_id": "at0005"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Problem/Diagnosis qualifier"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Diagnostic status"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Preliminary",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0016"
+                  }
+                },
+                "archetype_node_id": "at0004"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Current/Past?"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Current",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0062"
+                  }
+                },
+                "archetype_node_id": "at0060"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Active/Inactive?"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Active",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0026"
+                  }
+                },
+                "archetype_node_id": "at0003"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Level of control"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Controlled",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0099"
+                  }
+                },
+                "archetype_node_id": "at0098"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Diagnostic category"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Principal diagnosis",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0064"
+                  }
+                },
+                "archetype_node_id": "at0063"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.problem_qualifier.v2"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Diagnostic certainty"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Probable",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at0075"
+              }
+            },
+            "archetype_node_id": "at0073"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Comment"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Testdiagnose für Composition-Erstellung. ICD-10-GM fachlich passend: I10 Essentielle Hypertonie."
+            },
+            "archetype_node_id": "at0069"
+          }
+        ],
+        "archetype_node_id": "at0001"
+      },
+      "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis.v1"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
+}
