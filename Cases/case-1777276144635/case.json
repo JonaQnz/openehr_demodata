@@ -1,0 +1,24 @@
+{
+  "id": "case-1777276144635",
+  "title": "Tetstas",
+  "ehrId": "",
+  "templateId": "Blood Pressure",
+  "masterData": {
+    "ehrId": "",
+    "patientName": "Max Mustermann",
+    "birthDate": "1980-01-01",
+    "gender": "Männlich"
+  },
+  "selectedModuleIds": [
+    "blood-pressure",
+    "vitals-basic"
+  ],
+  "flatData": {
+    "ctx/language": "de",
+    "ctx/territory": "DE",
+    "ctx/time": "2026-04-27T07:51:26.610Z",
+    "patient_name": "Max Mustermann",
+    "patient_birthDate": "1980-01-01",
+    "patient_gender": "Männlich"
+  }
+}
