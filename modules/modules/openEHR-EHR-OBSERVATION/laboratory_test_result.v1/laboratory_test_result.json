@@ -1,0 +1,434 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "vg_ObservationLab.v.1.1.1"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.report.v1"
+    },
+    "template_id": {
+      "value": "vg_ObservationLab.v.1.1.1"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Dr. Bernd Schmidt"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2026-02-04T08:40:00Z"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "home",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "225"
+      }
+    },
+    "other_context": {
+      "_type": "ITEM_TREE",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Tree"
+      },
+      "items": [
+        {
+          "_type": "CLUSTER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Case identification"
+          },
+          "archetype_details": {
+            "archetype_id": {
+              "value": "openEHR-EHR-CLUSTER.case_identification.v0"
+            },
+            "rm_version": "1.0.4"
+          },
+          "items": [
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Case identifier"
+              },
+              "value": {
+                "_type": "DV_TEXT",
+                "value": "OPUS::L",
+                "mappings": [
+                  {
+                    "_type": "TERM_MAPPING",
+                    "match": "?",
+                    "target": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "observation.id"
+                      },
+                      "code_string": "Hämo_1234500"
+                    }
+                  }
+                ]
+              },
+              "archetype_node_id": "at0001"
+            }
+          ],
+          "archetype_node_id": "openEHR-EHR-CLUSTER.case_identification.v0"
+        }
+      ],
+      "archetype_node_id": "at0001"
+    }
+  },
+  "content": [
+    {
+      "_type": "OBSERVATION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Laboratory test result"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-OBSERVATION.laboratory_test_result.v1"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Test request details"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Requester order identifier"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Service Request",
+                  "mappings": [
+                    {
+                      "_type": "TERM_MAPPING",
+                      "match": "?",
+                      "target": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                          "_type": "TERMINOLOGY_ID",
+                          "value": "servicerequest.id"
+                        },
+                        "code_string": "1234500"
+                      }
+                    }
+                  ]
+                },
+                "archetype_node_id": "at0062"
+              }
+            ],
+            "archetype_node_id": "at0094"
+          }
+        ],
+        "archetype_node_id": "at0004"
+      },
+      "data": {
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Event Series"
+        },
+        "origin": {
+          "_type": "DV_DATE_TIME",
+          "value": "2026-02-04T11:00:00Z"
+        },
+        "events": [
+          {
+            "_type": "POINT_EVENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Any event"
+            },
+            "time": {
+              "_type": "DV_DATE_TIME",
+              "value": "2026-02-04T11:00:00Z"
+            },
+            "data": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Tree"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Test name"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "kleines Blutbild",
+                    "mappings": [
+                      {
+                        "_type": "TERM_MAPPING",
+                        "match": "=",
+                        "target": {
+                          "_type": "CODE_PHRASE",
+                          "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "Universal Service Identifier"
+                          },
+                          "code_string": "WI-60"
+                        }
+                      }
+                    ]
+                  },
+                  "archetype_node_id": "at0005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Overall test status"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Unknown",
+                    "mappings": [
+                      {
+                        "_type": "TERM_MAPPING",
+                        "match": "?",
+                        "target": {
+                          "_type": "CODE_PHRASE",
+                          "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "http://hl7.org/fhir/observation-status"
+                          },
+                          "code_string": "unknown"
+                        }
+                      }
+                    ]
+                  },
+                  "archetype_node_id": "at0073"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Diagnostic service category"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Laboratory",
+                    "mappings": [
+                      {
+                        "_type": "TERM_MAPPING",
+                        "match": "=",
+                        "target": {
+                          "_type": "CODE_PHRASE",
+                          "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "http://terminology.hl7.org/CodeSystem/observation-category"
+                          },
+                          "code_string": "laboratory"
+                        }
+                      }
+                    ]
+                  },
+                  "archetype_node_id": "at0077"
+                },
+                {
+                  "_type": "CLUSTER",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Laboratory analyte result"
+                  },
+                  "archetype_details": {
+                    "archetype_id": {
+                      "value": "openEHR-EHR-CLUSTER.laboratory_test_analyte.v1"
+                    },
+                    "rm_version": "1.0.4"
+                  },
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Analyte name"
+                      },
+                      "value": {
+                        "_type": "DV_TEXT",
+                        "value": "D-Dimere",
+                        "mappings": [
+                          {
+                            "_type": "TERM_MAPPING",
+                            "match": "=",
+                            "target": {
+                              "_type": "CODE_PHRASE",
+                              "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "internal_lab.id"
+                              },
+                              "code_string": "Hämo"
+                            }
+                          },
+                          {
+                            "_type": "TERM_MAPPING",
+                            "match": "?",
+                            "purpose": {
+                              "_type": "DV_CODED_TEXT",
+                              "value": "public health",
+                              "defining_code": {
+                                "_type": "CODE_PHRASE",
+                                "terminology_id": {
+                                  "_type": "TERMINOLOGY_ID",
+                                  "value": "openehr"
+                                },
+                                "code_string": "669"
+                              }
+                            },
+                            "target": {
+                              "_type": "CODE_PHRASE",
+                              "terminology_id": {
+                                "_type": "TERMINOLOGY_ID",
+                                "value": "LOINC"
+                              },
+                              "code_string": "48065-7"
+                            }
+                          }
+                        ]
+                      },
+                      "archetype_node_id": "at0024"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Analyte result"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "µg/l",
+                        "magnitude": 3840,
+                        "units_system": "http://unitsofmeasure.org"
+                      },
+                      "archetype_node_id": "at0001"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Reference range guidance"
+                      },
+                      "value": {
+                        "_type": "DV_TEXT",
+                        "value": "<670"
+                      },
+                      "archetype_node_id": "at0004"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Validation time"
+                      },
+                      "value": {
+                        "_type": "DV_DATE_TIME",
+                        "value": "2026-02-04T11:05:06"
+                      },
+                      "archetype_node_id": "at0025"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Result status time"
+                      },
+                      "value": {
+                        "_type": "DV_DATE_TIME",
+                        "value": "2026-02-04T11:11:00Z"
+                      },
+                      "archetype_node_id": "at0006"
+                    }
+                  ],
+                  "archetype_node_id": "openEHR-EHR-CLUSTER.laboratory_test_analyte.v1"
+                }
+              ],
+              "archetype_node_id": "at0003"
+            },
+            "archetype_node_id": "at0002"
+          }
+        ],
+        "archetype_node_id": "at0001"
+      },
+      "archetype_node_id": "openEHR-EHR-OBSERVATION.laboratory_test_result.v1"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1",
+  "uid": {
+    "_type": "OBJECT_VERSION_ID",
+    "value": "a64ac1d3-087b-4102-9c78-34b061c803e6::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
+  }
+}
