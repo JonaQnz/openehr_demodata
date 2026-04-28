@@ -1,0 +1,182 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "vg_konsilprozess.v0.0.1"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.request.v1"
+    },
+    "template_id": {
+      "value": "vg_konsilprozess.v0.0.1"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Jörn Helling"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2026-04-21T14:20:33.705403386Z"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "secondary medical care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "232"
+      }
+    }
+  },
+  "content": [
+    {
+      "_type": "ACTION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Service"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-ACTION.service.v1"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Requestor identifier"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "057a17ec"
+            },
+            "archetype_node_id": "at0016"
+          }
+        ],
+        "archetype_node_id": "at0015"
+      },
+      "time": {
+        "_type": "DV_DATE_TIME",
+        "value": "2026-04-21T14:20:33.705431786Z"
+      },
+      "description": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Service name"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "An appointment for the service has been made."
+            },
+            "archetype_node_id": "at0011"
+          }
+        ],
+        "archetype_node_id": "at0001"
+      },
+      "ism_transition": {
+        "_type": "ISM_TRANSITION",
+        "current_state": {
+          "_type": "DV_CODED_TEXT",
+          "value": "scheduled",
+          "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "openehr"
+            },
+            "code_string": "529"
+          }
+        },
+        "careflow_step": {
+          "_type": "DV_CODED_TEXT",
+          "value": "Service scheduled",
+          "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "local"
+            },
+            "code_string": "at0003"
+          }
+        }
+      },
+      "archetype_node_id": "openEHR-EHR-ACTION.service.v1"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.request.v1",
+  "uid": {
+    "_type": "OBJECT_VERSION_ID",
+    "value": "97944100-66d0-4908-8f98-b442c3430018::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
+  }
+}
