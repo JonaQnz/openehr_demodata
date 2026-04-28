@@ -1,0 +1,328 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "vg_konsilanforderung.v0.0.1"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.request.v1"
+    },
+    "template_id": {
+      "value": "vg_konsilanforderung.v0.0.1"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "external_ref": {
+      "_type": "PARTY_REF",
+      "namespace": "demographic",
+      "type": "PERSON",
+      "id": {
+        "_type": "GENERIC_ID",
+        "value": "90d4a215-7d7d-48fd-9ddf-3ead49391673",
+        "scheme": "keycloak"
+      }
+    },
+    "name": "Jona Kunze"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2026-04-21T14:18:49.104753467Z"
+    },
+    "end_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2026-04-22T14:18:49.104753467Z"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "nursing home care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "237"
+      }
+    }
+  },
+  "content": [
+    {
+      "_type": "INSTRUCTION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Konsil"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-INSTRUCTION.service_request.v1"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Auftrags-ID des anfordernden/einsendenden Systems"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "057a17ec"
+            },
+            "archetype_node_id": "at0010"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Einsender"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.person.v1"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Name"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Jona Kunze"
+                },
+                "archetype_node_id": "at0001"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "E-Mail"
+                },
+                "archetype_details": {
+                  "archetype_id": {
+                    "value": "openEHR-EHR-CLUSTER.electronic_communication.v1"
+                  },
+                  "rm_version": "1.0.4"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "E-Mail Adresse"
+                    },
+                    "value": {
+                      "_type": "DV_TEXT",
+                      "value": "jona.kunze+requester@vitagroup.ag"
+                    },
+                    "archetype_node_id": "at0002"
+                  }
+                ],
+                "archetype_node_id": "openEHR-EHR-CLUSTER.electronic_communication.v1"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.person.v1"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Empfänger"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.person.v1"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Name"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Jörn Helling"
+                },
+                "archetype_node_id": "at0001"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "E-Mail"
+                },
+                "archetype_details": {
+                  "archetype_id": {
+                    "value": "openEHR-EHR-CLUSTER.electronic_communication.v1"
+                  },
+                  "rm_version": "1.0.4"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "E-Mail-Adresse"
+                    },
+                    "value": {
+                      "_type": "DV_TEXT",
+                      "value": "joern.helling+consultant@vitagroup.ag"
+                    },
+                    "archetype_node_id": "at0002"
+                  }
+                ],
+                "archetype_node_id": "openEHR-EHR-CLUSTER.electronic_communication.v1"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.person.v1"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Status der Anfrage"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "In Bearbeitung"
+            },
+            "archetype_node_id": "at0127"
+          }
+        ],
+        "archetype_node_id": "at0008"
+      },
+      "narrative": {
+        "_type": "DV_TEXT",
+        "value": "hjjh"
+      },
+      "activities": [
+        {
+          "_type": "ACTIVITY",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Aktuelle Aktivität"
+          },
+          "description": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Tree"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Name der Dienstleistung"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Konsilanfrage"
+                },
+                "archetype_node_id": "at0121"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Klinische Indikation"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "hat er blonde haare"
+                },
+                "archetype_node_id": "at0152"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Dringlichkeit"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Normal"
+                },
+                "archetype_node_id": "at0068"
+              }
+            ],
+            "archetype_node_id": "at0009"
+          },
+          "action_archetype_id": "/.*/",
+          "archetype_node_id": "at0001"
+        }
+      ],
+      "archetype_node_id": "openEHR-EHR-INSTRUCTION.service_request.v1"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.request.v1",
+  "uid": {
+    "_type": "OBJECT_VERSION_ID",
+    "value": "9299eccd-0931-4890-8cc4-c3646031d7aa::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::2"
+  }
+}
