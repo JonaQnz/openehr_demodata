@@ -1,0 +1,149 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "treetop_pulmonary_embolism_workflow_result"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.report.v1"
+    },
+    "template_id": {
+      "value": "treetop_pulmonary_embolism_workflow_result"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Smart Workflows"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2025-12-15T13:39:43.966635926Z"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "other care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "238"
+      }
+    }
+  },
+  "content": [
+    {
+      "_type": "EVALUATION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Wells Criteria for Pulmonary Embolism Assessment"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-EVALUATION.wells_criteria_for_pulmonary_embolism_assessment.v0"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "data": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Item tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Three level clinical probability"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Moderate",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at0009"
+              }
+            },
+            "archetype_node_id": "at0005",
+            "uid": {
+              "_type": "HIER_OBJECT_ID",
+              "value": "1q94BgfYX85urHxMs1QuAW"
+            }
+          }
+        ],
+        "archetype_node_id": "at0001",
+        "uid": {
+          "_type": "HIER_OBJECT_ID",
+          "value": "1XOvzVszbC9ehtMHj/YB//"
+        }
+      },
+      "archetype_node_id": "openEHR-EHR-EVALUATION.wells_criteria_for_pulmonary_embolism_assessment.v0",
+      "uid": {
+        "_type": "HIER_OBJECT_ID",
+        "value": "3m8nzRWM58IuDX3UuJbvcO"
+      }
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1",
+  "uid": {
+    "_type": "OBJECT_VERSION_ID",
+    "value": "855ce9b7-8beb-4a52-a7a5-a96feceb33fb::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
+  }
+}
