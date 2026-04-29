@@ -357,9 +357,5 @@
       "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
     }
   ],
-  "archetype_node_id": "openEHR-EHR-COMPOSITION.health_summary.v1",
-  "uid": {
-    "_type": "OBJECT_VERSION_ID",
-    "value": "88fa9c1c-4c67-4ad1-b6c8-ca08cb79fe09::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
-  }
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.health_summary.v1"
 }

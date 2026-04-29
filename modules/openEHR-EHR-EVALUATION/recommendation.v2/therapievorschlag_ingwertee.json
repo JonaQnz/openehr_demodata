@@ -155,9 +155,5 @@
       "archetype_node_id": "openEHR-EHR-EVALUATION.recommendation.v2"
     }
   ],
-  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1",
-  "uid": {
-    "_type": "OBJECT_VERSION_ID",
-    "value": "960d1dc7-9b81-4ff7-b517-bb2ff2e160af::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
-  }
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
 }

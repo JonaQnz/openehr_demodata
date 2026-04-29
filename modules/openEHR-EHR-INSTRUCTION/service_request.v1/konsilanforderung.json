@@ -320,9 +320,5 @@
       "archetype_node_id": "openEHR-EHR-INSTRUCTION.service_request.v1"
     }
   ],
-  "archetype_node_id": "openEHR-EHR-COMPOSITION.request.v1",
-  "uid": {
-    "_type": "OBJECT_VERSION_ID",
-    "value": "9299eccd-0931-4890-8cc4-c3646031d7aa::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::2"
-  }
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.request.v1"
 }

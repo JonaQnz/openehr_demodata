@@ -150,9 +150,5 @@
       "archetype_node_id": "openEHR-EHR-OBSERVATION.progress_note.v1"
     }
   ],
-  "archetype_node_id": "openEHR-EHR-COMPOSITION.progress_note.v0",
-  "uid": {
-    "_type": "OBJECT_VERSION_ID",
-    "value": "db52367d-e79f-4f77-8b38-49a671f7ccab::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::2"
-  }
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.progress_note.v0"
 }

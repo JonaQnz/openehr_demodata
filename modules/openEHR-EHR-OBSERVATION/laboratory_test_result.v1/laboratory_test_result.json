@@ -426,9 +426,5 @@
       "archetype_node_id": "openEHR-EHR-OBSERVATION.laboratory_test_result.v1"
     }
   ],
-  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1",
-  "uid": {
-    "_type": "OBJECT_VERSION_ID",
-    "value": "a64ac1d3-087b-4102-9c78-34b061c803e6::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
-  }
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
 }
