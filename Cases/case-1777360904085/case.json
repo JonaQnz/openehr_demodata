@@ -1,5 +1,5 @@
 {
-  "id": "case-1777360904085",
+  "id": "case-1777360904086",
   "title": "Testfall Maria Schneider",
   "templateId": "vg_Diagnosis.v1.1.0",
   "masterData": {
@@ -7,7 +7,7 @@
     "patientName": "Maria Schneider",
     "birthDate": "1959-04-12",
     "gender": "female",
-    "identifier": "N2478923483",
+    "identifier": "N2478923484",
     "given": "Maria",
     "family": "Schneider",
     "street": "Kölner Straße 1",
