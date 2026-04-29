@@ -15,15 +15,64 @@
     "city": "Köln",
     "country": "Deutschland"
   },
-  "selectedModuleIds": [
-    "depressive_episode_(icd-10_f32)",
-    "herzinsuffizienz_(icd_i50)",
-    "therapievorschlag_ingwertee",
-    "wells_criteria_pulmonary_embolism",
-    "blood_pressure",
-    "ecg_result",
-    "service_appointment",
-    "fehlsichtigkeit"
+  "stays": [
+    {
+      "id": "stay-1777466736781",
+      "label": "Aufenthalt 1",
+      "startDate": "2026-04-29",
+      "endDate": "2026-05-04",
+      "stationCode": "0100",
+      "stationDisplay": "Innere Medizin",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "",
+      "modules": [
+        {
+          "moduleId": "depressive_episode_(icd-10_f32)",
+          "dateTime": "2026-05-02T11:47:00"
+        },
+        {
+          "moduleId": "herzinsuffizienz_(icd_i50)",
+          "dateTime": "2026-05-03T11:19:00"
+        },
+        {
+          "moduleId": "therapievorschlag_ingwertee",
+          "dateTime": "2026-05-01T08:12:00"
+        },
+        {
+          "moduleId": "wells_criteria_pulmonary_embolism",
+          "dateTime": "2026-04-29T20:52:00"
+        },
+        {
+          "moduleId": "blood_pressure",
+          "dateTime": "2026-04-29T09:57:00"
+        },
+        {
+          "moduleId": "ecg_result",
+          "dateTime": "2026-05-02T21:18:00"
+        },
+        {
+          "moduleId": "service_appointment",
+          "dateTime": "2026-04-29T17:53:00"
+        },
+        {
+          "moduleId": "fehlsichtigkeit",
+          "dateTime": "2026-04-30T10:54:00"
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "stay-1777466738859",
+      "label": "Aufenthalt 2",
+      "startDate": "2026-05-04",
+      "endDate": "2026-05-09",
+      "stationCode": "0100",
+      "stationDisplay": "Innere Medizin",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "",
+      "modules": [],
+      "collapsed": false
+    }
   ],
   "compositions": [
     {
@@ -992,14 +1041,14 @@
       "_type": "COMPOSITION",
       "name": {
         "_type": "DV_TEXT",
-        "value": "heart_anamnesis.v1.0.0"
+        "value": "vg_BloodPressure.v1.0.1"
       },
       "archetype_details": {
         "archetype_id": {
           "value": "openEHR-EHR-COMPOSITION.report.v1"
         },
         "template_id": {
-          "value": "heart_anamnesis"
+          "value": "vg_BloodPressure.v1.0.1"
         },
         "rm_version": "1.0.4"
       },
@@ -1017,7 +1066,7 @@
           "_type": "TERMINOLOGY_ID",
           "value": "ISO_3166-1"
         },
-        "code_string": "SE"
+        "code_string": "DE"
       },
       "category": {
         "_type": "DV_CODED_TEXT",
@@ -1041,205 +1090,445 @@
           "_type": "DV_DATE_TIME",
           "value": "2026-03-03T23:18:34"
         },
+        "end_time": {
+          "_type": "DV_DATE_TIME",
+          "value": "2026-03-03T23:18:34"
+        },
         "setting": {
           "_type": "DV_CODED_TEXT",
-          "value": "secondary medical care",
+          "value": "home",
           "defining_code": {
             "_type": "CODE_PHRASE",
             "terminology_id": {
               "_type": "TERMINOLOGY_ID",
               "value": "openehr"
             },
-            "code_string": "232"
+            "code_string": "225"
           }
+        },
+        "other_context": {
+          "_type": "ITEM_TREE",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Tree"
+          },
+          "items": [
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Report ID"
+              },
+              "value": {
+                "_type": "DV_TEXT",
+                "value": "Lorem ipsum"
+              },
+              "archetype_node_id": "at0002"
+            },
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Status"
+              },
+              "value": {
+                "_type": "DV_TEXT",
+                "value": "Lorem ipsum"
+              },
+              "archetype_node_id": "at0005"
+            }
+          ],
+          "archetype_node_id": "at0001"
+        },
+        "health_care_facility": {
+          "_type": "PARTY_IDENTIFIED",
+          "name": "DOE, John"
         }
       },
       "content": [
         {
-          "_type": "SECTION",
+          "_type": "OBSERVATION",
           "name": {
             "_type": "DV_TEXT",
-            "value": "Vital Signs"
+            "value": "Blood pressure"
           },
           "archetype_details": {
             "archetype_id": {
-              "value": "openEHR-EHR-SECTION.adhoc.v1"
+              "value": "openEHR-EHR-OBSERVATION.blood_pressure.v2"
             },
             "rm_version": "1.0.4"
           },
-          "items": [
-            {
-              "_type": "OBSERVATION",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "Blood pressure"
-              },
-              "archetype_details": {
-                "archetype_id": {
-                  "value": "openEHR-EHR-OBSERVATION.blood_pressure.v2"
-                },
-                "rm_version": "1.0.4"
-              },
-              "language": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "ISO_639-1"
-                },
-                "code_string": "en"
-              },
-              "encoding": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "IANA_character-sets"
-                },
-                "code_string": "UTF-8"
-              },
-              "subject": {
-                "_type": "PARTY_SELF"
-              },
-              "data": {
+          "language": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "ISO_639-1"
+            },
+            "code_string": "en"
+          },
+          "encoding": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "IANA_character-sets"
+            },
+            "code_string": "UTF-8"
+          },
+          "workflow_id": {
+            "_type": "OBJECT_REF",
+            "namespace": "unknown",
+            "type": "ANY",
+            "id": {
+              "_type": "GENERIC_ID",
+              "value": "4f50f151-287b-3add-970f-739a56814a38",
+              "scheme": "scheme"
+            }
+          },
+          "subject": {
+            "_type": "PARTY_SELF"
+          },
+          "protocol": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Tree"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
                 "name": {
                   "_type": "DV_TEXT",
-                  "value": "History"
+                  "value": "Cuff size"
                 },
-                "origin": {
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Adult Thigh",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0015"
+                  }
+                },
+                "archetype_node_id": "at0013"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Location of measurement"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Right arm",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0025"
+                  }
+                },
+                "archetype_node_id": "at0014"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Method"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Auscultation",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at1036"
+                  }
+                },
+                "archetype_node_id": "at1035"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Mean arterial pressure formula"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at1038"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Systolic pressure formula"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at1054"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Diastolic pressure formula"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at1055"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Diastolic endpoint"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Phase IV",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at1011"
+                  }
+                },
+                "archetype_node_id": "at1010"
+              }
+            ],
+            "archetype_node_id": "at0011"
+          },
+          "guideline_id": {
+            "_type": "OBJECT_REF",
+            "namespace": "unknown",
+            "type": "ANY",
+            "id": {
+              "_type": "GENERIC_ID",
+              "value": "9aa54688-cfd4-3783-8cf4-f9467aafa263",
+              "scheme": "scheme"
+            }
+          },
+          "data": {
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "History"
+            },
+            "origin": {
+              "_type": "DV_DATE_TIME",
+              "value": "2026-03-03T23:18:34"
+            },
+            "events": [
+              {
+                "_type": "INTERVAL_EVENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Any event"
+                },
+                "time": {
                   "_type": "DV_DATE_TIME",
                   "value": "2026-03-03T23:18:34"
                 },
-                "events": [
-                  {
-                    "_type": "POINT_EVENT",
-                    "name": {
-                      "_type": "DV_TEXT",
-                      "value": "Any event"
-                    },
-                    "time": {
-                      "_type": "DV_DATE_TIME",
-                      "value": "2026-03-03T23:18:34"
-                    },
-                    "state": {
-                      "_type": "ITEM_TREE",
+                "state": {
+                  "_type": "ITEM_TREE",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "state structure"
+                  },
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "state structure"
+                        "value": "Position"
                       },
-                      "items": [
-                        {
-                          "_type": "ELEMENT",
-                          "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Position"
+                      "value": {
+                        "_type": "DV_CODED_TEXT",
+                        "value": "Standing",
+                        "defining_code": {
+                          "_type": "CODE_PHRASE",
+                          "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "local"
                           },
-                          "value": {
-                            "_type": "DV_CODED_TEXT",
-                            "value": "Sitting",
-                            "defining_code": {
-                              "_type": "CODE_PHRASE",
-                              "terminology_id": {
-                                "_type": "TERMINOLOGY_ID",
-                                "value": "local"
-                              },
-                              "code_string": "at1001"
-                            }
-                          },
-                          "archetype_node_id": "at0008"
-                        },
-                        {
-                          "_type": "ELEMENT",
-                          "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Sleep status"
-                          },
-                          "value": {
-                            "_type": "DV_CODED_TEXT",
-                            "value": "Awake",
-                            "defining_code": {
-                              "_type": "CODE_PHRASE",
-                              "terminology_id": {
-                                "_type": "TERMINOLOGY_ID",
-                                "value": "local"
-                              },
-                              "code_string": "at1044"
-                            }
-                          },
-                          "archetype_node_id": "at1043"
+                          "code_string": "at1000"
                         }
-                      ],
-                      "archetype_node_id": "at0007"
+                      },
+                      "archetype_node_id": "at0008"
                     },
-                    "data": {
-                      "_type": "ITEM_TREE",
+                    {
+                      "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "blood pressure"
+                        "value": "Confounding factors"
                       },
-                      "items": [
-                        {
-                          "_type": "ELEMENT",
-                          "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Systolic"
-                          },
-                          "value": {
-                            "_type": "DV_QUANTITY",
-                            "precision": 0,
-                            "units": "mm[Hg]",
-                            "magnitude": 140
-                          },
-                          "archetype_node_id": "at0004"
-                        },
-                        {
-                          "_type": "ELEMENT",
-                          "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Diastolic"
-                          },
-                          "value": {
-                            "_type": "DV_QUANTITY",
-                            "precision": 0,
-                            "units": "mm[Hg]",
-                            "magnitude": 90
-                          },
-                          "archetype_node_id": "at0005"
-                        },
-                        {
-                          "_type": "ELEMENT",
-                          "name": {
-                            "_type": "DV_TEXT",
-                            "value": "Comment"
-                          },
-                          "value": {
-                            "_type": "DV_TEXT",
-                            "value": "nnn",
-                            "formatting": "plain"
-                          },
-                          "archetype_node_id": "at0033"
-                        }
-                      ],
-                      "archetype_node_id": "at0003"
+                      "value": {
+                        "_type": "DV_TEXT",
+                        "value": "Lorem ipsum"
+                      },
+                      "archetype_node_id": "at1052"
                     },
-                    "archetype_node_id": "at0006"
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Sleep status"
+                      },
+                      "value": {
+                        "_type": "DV_CODED_TEXT",
+                        "value": "Awake",
+                        "defining_code": {
+                          "_type": "CODE_PHRASE",
+                          "terminology_id": {
+                            "_type": "TERMINOLOGY_ID",
+                            "value": "local"
+                          },
+                          "code_string": "at1044"
+                        }
+                      },
+                      "archetype_node_id": "at1043"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Tilt"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "deg",
+                        "magnitude": 0
+                      },
+                      "archetype_node_id": "at1005"
+                    }
+                  ],
+                  "archetype_node_id": "at0007"
+                },
+                "data": {
+                  "_type": "ITEM_TREE",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "blood pressure"
+                  },
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Systolic"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "mm[Hg]",
+                        "magnitude": 140
+                      },
+                      "archetype_node_id": "at0004"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Diastolic"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "mm[Hg]",
+                        "magnitude": 90
+                      },
+                      "archetype_node_id": "at0005"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Mean arterial pressure"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "mm[Hg]",
+                        "magnitude": 500
+                      },
+                      "archetype_node_id": "at1006"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Pulse pressure"
+                      },
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "units": "mm[Hg]",
+                        "magnitude": 500
+                      },
+                      "archetype_node_id": "at1007"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Clinical interpretation"
+                      },
+                      "value": {
+                        "_type": "DV_TEXT",
+                        "value": "Oh no!"
+                      },
+                      "archetype_node_id": "at1059"
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Comment"
+                      },
+                      "value": {
+                        "_type": "DV_TEXT",
+                        "value": "From BPM Form"
+                      },
+                      "archetype_node_id": "at0033"
+                    }
+                  ],
+                  "archetype_node_id": "at0003"
+                },
+                "width": {
+                  "_type": "DV_DURATION",
+                  "value": "PT42H"
+                },
+                "math_function": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "minimum",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "openehr"
+                    },
+                    "code_string": "145"
                   }
-                ],
-                "archetype_node_id": "at0001"
-              },
-              "archetype_node_id": "openEHR-EHR-OBSERVATION.blood_pressure.v2",
-              "uid": {
-                "_type": "HIER_OBJECT_ID",
-                "value": "46314cfe-78a0-455d-b914-9f4801b748b1"
+                },
+                "archetype_node_id": "at0006"
               }
-            }
-          ],
-          "archetype_node_id": "openEHR-EHR-SECTION.adhoc.v1"
+            ],
+            "archetype_node_id": "at0001"
+          },
+          "archetype_node_id": "openEHR-EHR-OBSERVATION.blood_pressure.v2"
         }
       ],
-      "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1",
-      "uid": {
-        "_type": "OBJECT_VERSION_ID",
-        "value": "561a0ccf-3319-47fd-8567-824894c2cb2a::hip-lab.hip-cdr-core-ehrbase-enterprise-sandbox.sandbox.vghip.cloud::1"
-      }
+      "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
     },
     {
       "_type": "COMPOSITION",
