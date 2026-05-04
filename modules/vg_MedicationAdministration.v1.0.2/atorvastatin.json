@@ -1,0 +1,1143 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "vg_MedicationAdministration.v1.0.2"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.report.v1"
+    },
+    "template_id": {
+      "value": "vg_MedicationAdministration.v1.0.2"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "de"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "DE"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Max Mustermann"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2022-02-03T04:05:06"
+    },
+    "end_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2022-02-03T04:05:06"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "home",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "225"
+      }
+    },
+    "other_context": {
+      "_type": "ITEM_TREE",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Tree"
+      },
+      "items": [
+        {
+          "_type": "ELEMENT",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Bericht ID"
+          },
+          "value": {
+            "_type": "DV_TEXT",
+            "value": "Lorem ipsum"
+          },
+          "archetype_node_id": "at0002"
+        },
+        {
+          "_type": "ELEMENT",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Status"
+          },
+          "value": {
+            "_type": "DV_TEXT",
+            "value": "Lorem ipsum"
+          },
+          "archetype_node_id": "at0005"
+        },
+        {
+          "_type": "CLUSTER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Fallidentifikation"
+          },
+          "archetype_details": {
+            "archetype_id": {
+              "value": "openEHR-EHR-CLUSTER.case_identification.v0"
+            },
+            "rm_version": "1.0.4"
+          },
+          "items": [
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Fall-Kennung"
+              },
+              "value": {
+                "_type": "DV_TEXT",
+                "value": "Lorem ipsum"
+              },
+              "archetype_node_id": "at0001"
+            },
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Fall-Beginn"
+              },
+              "value": {
+                "_type": "DV_DATE_TIME",
+                "value": "2022-02-03T04:05:06"
+              },
+              "archetype_node_id": "at0002"
+            },
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "Status"
+              },
+              "value": {
+                "_type": "DV_CODED_TEXT",
+                "value": "Abgeschlossen",
+                "defining_code": {
+                  "_type": "CODE_PHRASE",
+                  "terminology_id": {
+                    "_type": "TERMINOLOGY_ID",
+                    "value": "local"
+                  },
+                  "code_string": "at0004"
+                }
+              },
+              "archetype_node_id": "at0003"
+            },
+            {
+              "_type": "ELEMENT",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "identifizierter Fall"
+              },
+              "value": {
+                "_type": "DV_TEXT",
+                "value": "Atorvastatin"
+              },
+              "archetype_node_id": "at0006"
+            }
+          ],
+          "archetype_node_id": "openEHR-EHR-CLUSTER.case_identification.v0"
+        }
+      ],
+      "archetype_node_id": "at0001"
+    },
+    "health_care_facility": {
+      "_type": "PARTY_IDENTIFIED",
+      "name": "DOE, John"
+    }
+  },
+  "content": [
+    {
+      "_type": "ACTION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Arzneimittelanwendung"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-ACTION.medication.v1"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "de"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "ISO-10646-UTF-1"
+      },
+      "workflow_id": {
+        "_type": "OBJECT_REF",
+        "namespace": "unknown",
+        "type": "ANY",
+        "id": {
+          "_type": "GENERIC_ID",
+          "value": "2798bae6-b6f3-3c1f-99fa-7c6f9d671710",
+          "scheme": "scheme"
+        }
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "provider": {
+        "_type": "PARTY_SELF"
+      },
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "ID der Verordnung"
+            },
+            "value": {
+              "_type": "DV_IDENTIFIER",
+              "id": "dev/null"
+            },
+            "archetype_node_id": "at0103"
+          }
+        ],
+        "archetype_node_id": "at0030"
+      },
+      "guideline_id": {
+        "_type": "OBJECT_REF",
+        "namespace": "unknown",
+        "type": "ANY",
+        "id": {
+          "_type": "GENERIC_ID",
+          "value": "49871477-3b73-33c5-ba22-fb509d963141",
+          "scheme": "scheme"
+        }
+      },
+      "time": {
+        "_type": "DV_DATE_TIME",
+        "value": "2022-02-03T04:05:06"
+      },
+      "description": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Arzneimittel"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Atorvastatin"
+            },
+            "archetype_node_id": "at0020"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Arzneimittel"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.medication.v2"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Darreichungsform"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0071"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Kategorie"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Ad-hoc Mixtur",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0143"
+                  }
+                },
+                "archetype_node_id": "at0142"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Wirkst�rke (Darreichungsform)"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Wirkst�rke (Z�hler)"
+                    },
+                    "value": {
+                      "_type": "DV_QUANTITY",
+                      "units": "mm",
+                      "magnitude": 22,
+                      "value": "20"
+                    },
+                    "archetype_node_id": "at0153"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Wirkst�rke (Nenner)"
+                    },
+                    "value": {
+                      "_type": "DV_QUANTITY",
+                      "units": "mm",
+                      "magnitude": 22,
+                      "value": "1"
+                    },
+                    "archetype_node_id": "at0157"
+                  }
+                ],
+                "archetype_node_id": "at0152"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Wirkstoffkonzentration"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "mm",
+                  "magnitude": 22
+                },
+                "archetype_node_id": "at0115"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Hersteller"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0151"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Batch ID"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0150"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Verfallsdatum"
+                },
+                "value": {
+                  "_type": "DV_DATE_TIME",
+                  "value": "2022-02-03T04:05:06"
+                },
+                "archetype_node_id": "at0003"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Menge"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "mm",
+                  "magnitude": 22,
+                  "value": "1"
+                },
+                "archetype_node_id": "at0139"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Alternative Menge"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "mm",
+                  "magnitude": 22
+                },
+                "archetype_node_id": "at0148"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Funktion"
+                },
+                "value": {
+                  "_type": "DV_CODED_TEXT",
+                  "value": "Wirkstoff",
+                  "defining_code": {
+                    "_type": "CODE_PHRASE",
+                    "terminology_id": {
+                      "_type": "TERMINOLOGY_ID",
+                      "value": "local"
+                    },
+                    "code_string": "at0080"
+                  }
+                },
+                "archetype_node_id": "at0127"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Beschreibung"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0133"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Arzneimittelgruppe"
+                },
+                "archetype_details": {
+                  "archetype_id": {
+                    "value": "openEHR-EHR-CLUSTER.drug_class.v0"
+                  },
+                  "rm_version": "1.0.4"
+                },
+                "items": [
+                  {
+                    "_type": "CLUSTER",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Katalog"
+                    },
+                    "items": [
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Katalogname"
+                        },
+                        "value": {
+                          "_type": "DV_TEXT",
+                          "value": "Lorem ipsum"
+                        },
+                        "archetype_node_id": "at0002"
+                      },
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Version"
+                        },
+                        "value": {
+                          "_type": "DV_TEXT",
+                          "value": "Lorem ipsum"
+                        },
+                        "archetype_node_id": "at0005"
+                      },
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Beschreibung"
+                        },
+                        "value": {
+                          "_type": "DV_TEXT",
+                          "value": "Lorem ipsum"
+                        },
+                        "archetype_node_id": "at0010"
+                      }
+                    ],
+                    "archetype_node_id": "at0004"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Kommentar"
+                    },
+                    "value": {
+                      "_type": "DV_TEXT",
+                      "value": "Lorem ipsum"
+                    },
+                    "archetype_node_id": "at0007"
+                  }
+                ],
+                "archetype_node_id": "openEHR-EHR-CLUSTER.drug_class.v0"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.medication.v2"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Dosierung"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.dosage.v2"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Dosierungsreihenfolge"
+                },
+                "value": {
+                  "_type": "DV_COUNT",
+                  "magnitude": 22
+                },
+                "archetype_node_id": "at0164"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Dosis"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "mm",
+                  "magnitude": 22
+                },
+                "archetype_node_id": "at0144"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Dosisformel"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0135"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Dosisbeschreibung"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "1×20 mg"
+                },
+                "archetype_node_id": "at0178"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Zeitablauf - t�glich"
+                },
+                "archetype_details": {
+                  "archetype_id": {
+                    "value": "openEHR-EHR-CLUSTER.timing_daily.v1"
+                  },
+                  "rm_version": "1.0.4"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Frequenz"
+                    },
+                    "value": {
+                      "_type": "DV_QUANTITY",
+                      "units": "1/d",
+                      "magnitude": 22
+                    },
+                    "archetype_node_id": "at0003"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Intervall"
+                    },
+                    "value": {
+                      "_type": "DV_DURATION",
+                      "value": "PT0S"
+                    },
+                    "archetype_node_id": "at0014"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Bestimmte Uhrzeit"
+                    },
+                    "value": {
+                      "_type": "DV_TIME",
+                      "value": "04:05:06"
+                    },
+                    "archetype_node_id": "at0004"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Beschreibung des Zeitablaufs"
+                    },
+                    "value": {
+                      "_type": "DV_TEXT",
+                      "value": "täglich"
+                    },
+                    "archetype_node_id": "at0027"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Ist der genaue Zeitablauf entscheidend?"
+                    },
+                    "value": {
+                      "_type": "DV_BOOLEAN",
+                      "value": true
+                    },
+                    "archetype_node_id": "at0023"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Bei Bedarf"
+                    },
+                    "value": {
+                      "_type": "DV_BOOLEAN",
+                      "value": true
+                    },
+                    "archetype_node_id": "at0024"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Kriterium \"Bei Bedarf\""
+                    },
+                    "value": {
+                      "_type": "DV_TEXT",
+                      "value": "Lorem ipsum"
+                    },
+                    "archetype_node_id": "at0025"
+                  },
+                  {
+                    "_type": "CLUSTER",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Bestimmtes Ereignis"
+                    },
+                    "items": [
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Name des Ereignisses"
+                        },
+                        "value": {
+                          "_type": "DV_TEXT",
+                          "value": "Lorem ipsum"
+                        },
+                        "archetype_node_id": "at0026"
+                      },
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Zeitspanne"
+                        },
+                        "value": {
+                          "_type": "DV_DURATION",
+                          "value": "PT0S"
+                        },
+                        "archetype_node_id": "at0040"
+                      }
+                    ],
+                    "archetype_node_id": "at0039"
+                  },
+                  {
+                    "_type": "CLUSTER",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Ein/Aus-Zyklus"
+                    },
+                    "items": [
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Ein"
+                        },
+                        "value": {
+                          "_type": "DV_DURATION",
+                          "value": "PT0S"
+                        },
+                        "archetype_node_id": "at0036"
+                      },
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Aus"
+                        },
+                        "value": {
+                          "_type": "DV_DURATION",
+                          "value": "PT0S"
+                        },
+                        "archetype_node_id": "at0037"
+                      },
+                      {
+                        "_type": "ELEMENT",
+                        "name": {
+                          "_type": "DV_TEXT",
+                          "value": "Wiederholungen"
+                        },
+                        "value": {
+                          "_type": "DV_COUNT",
+                          "magnitude": 21
+                        },
+                        "archetype_node_id": "at0038"
+                      }
+                    ],
+                    "archetype_node_id": "at0035"
+                  }
+                ],
+                "archetype_node_id": "openEHR-EHR-CLUSTER.timing_daily.v1"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Verabreichungsrate"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "l/h",
+                  "magnitude": 21
+                },
+                "archetype_node_id": "at0134"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Verabreichungsdauer"
+                },
+                "value": {
+                  "_type": "DV_DURATION",
+                  "value": "PT0S"
+                },
+                "archetype_node_id": "at0102"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Alternative Dosis"
+                },
+                "value": {
+                  "_type": "DV_QUANTITY",
+                  "units": "mm",
+                  "magnitude": 22
+                },
+                "archetype_node_id": "at0176"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.dosage.v2"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Klinische Indikation"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Hyperlipidämie"
+            },
+            "archetype_node_id": "at0156"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Substitution"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Substitution wurde durchgef�hrt",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at0138"
+              }
+            },
+            "archetype_node_id": "at0132"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Grund f�r die Substitution"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Lorem ipsum"
+            },
+            "archetype_node_id": "at0133"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Urspr�nglich geplantes Datum/Uhrzeit"
+            },
+            "value": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "archetype_node_id": "at0043"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Datum/Uhrzeit des Neustarts"
+            },
+            "value": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "archetype_node_id": "at0154"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Kriterium des Neustarts"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Lorem ipsum"
+            },
+            "archetype_node_id": "at0155"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Begr�ndung"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Lorem ipsum"
+            },
+            "archetype_node_id": "at0021"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Details zur Verabreichung"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Verabreichungsweg"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0147"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "K�rperstelle"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0141"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Methode der Verabreichung"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0143"
+              }
+            ],
+            "archetype_node_id": "at0140"
+          },
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Person"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.person.v1"
+              },
+              "rm_version": "1.0.4"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Bezeichnung"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0011"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Identifikator"
+                },
+                "value": {
+                  "_type": "DV_IDENTIFIER",
+                  "id": "dev/null"
+                },
+                "archetype_node_id": "at0003"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Rolle"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0004"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Kommentar"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Lorem ipsum"
+                },
+                "archetype_node_id": "at0010"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.person.v1"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Patientenanweisung"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Lorem ipsum"
+            },
+            "archetype_node_id": "at0033"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Nachkontrolliert?"
+            },
+            "value": {
+              "_type": "DV_BOOLEAN",
+              "value": true
+            },
+            "archetype_node_id": "at0149"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Sequenznummer"
+            },
+            "value": {
+              "_type": "DV_COUNT",
+              "magnitude": 42
+            },
+            "archetype_node_id": "at0025"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Kommentar"
+            },
+            "value": {
+              "_type": "DV_TEXT",
+              "value": "Lorem ipsum"
+            },
+            "archetype_node_id": "at0024"
+          }
+        ],
+        "archetype_node_id": "at0017"
+      },
+      "ism_transition": {
+        "_type": "ISM_TRANSITION",
+        "current_state": {
+          "_type": "DV_CODED_TEXT",
+          "value": "active",
+          "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "openehr"
+            },
+            "code_string": "245"
+          }
+        },
+        "transition": {
+          "_type": "DV_CODED_TEXT",
+          "value": "start",
+          "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "openehr"
+            },
+            "code_string": "540"
+          }
+        },
+        "careflow_step": {
+          "_type": "DV_CODED_TEXT",
+          "value": "Rezept wartet auf Genehmigung",
+          "defining_code": {
+            "_type": "CODE_PHRASE",
+            "terminology_id": {
+              "_type": "TERMINOLOGY_ID",
+              "value": "local"
+            },
+            "code_string": "at0145"
+          }
+        }
+      },
+      "instruction_details": {
+        "_type": "INSTRUCTION_DETAILS",
+        "instruction_id": {
+          "_type": "LOCATABLE_REF",
+          "namespace": "unknown",
+          "type": "INSTRUCTION",
+          "id": {
+            "_type": "HIER_OBJECT_ID",
+            "value": "fed6fb75-0ee5-3684-a38d-b5f2ff71ea14"
+          },
+          "path": ""
+        },
+        "activity_id": "activities[at0001]"
+      },
+      "archetype_node_id": "openEHR-EHR-ACTION.medication.v1"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.report.v1"
+}
