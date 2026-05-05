@@ -705,6 +705,1033 @@
       "_type": "OBSERVATION",
       "name": {
         "_type": "DV_TEXT",
+        "value": "Pulse/Heart beat"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-OBSERVATION.pulse.v2"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "en"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "ISO-10646-UTF-1"
+      },
+      "workflow_id": {
+        "_type": "OBJECT_REF",
+        "namespace": "unknown",
+        "type": "ANY",
+        "id": {
+          "_type": "GENERIC_ID",
+          "value": "a7d5d814-c20a-3aa2-930a-1cae77f1924e",
+          "scheme": "scheme"
+        }
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "provider": {
+        "_type": "PARTY_SELF"
+      },
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "List"
+        },
+        "items": [
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Method"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Palpation",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at1032"
+              }
+            },
+            "archetype_node_id": "at1019"
+          },
+          {
+            "_type": "ELEMENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Body site"
+            },
+            "value": {
+              "_type": "DV_CODED_TEXT",
+              "value": "Radial Artery - Left",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "local"
+                },
+                "code_string": "at1038"
+              }
+            },
+            "archetype_node_id": "at1037"
+          }
+        ],
+        "archetype_node_id": "at0010"
+      },
+      "guideline_id": {
+        "_type": "OBJECT_REF",
+        "namespace": "unknown",
+        "type": "ANY",
+        "id": {
+          "_type": "GENERIC_ID",
+          "value": "99cf6910-fad9-33fb-91c7-e1520dd39a27",
+          "scheme": "scheme"
+        }
+      },
+      "data": {
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "history"
+        },
+        "origin": {
+          "_type": "DV_DATE_TIME",
+          "value": "2022-02-03T04:05:06"
+        },
+        "period": {
+          "_type": "DV_DURATION",
+          "value": "PT0S"
+        },
+        "duration": {
+          "_type": "DV_DURATION",
+          "value": "PT0S"
+        },
+        "events": [
+          {
+            "_type": "INTERVAL_EVENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Maximum"
+            },
+            "time": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "state": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "List"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Position"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Standing/upright",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1003"
+                    }
+                  },
+                  "archetype_node_id": "at0013"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Confounding factors"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1018"
+                }
+              ],
+              "archetype_node_id": "at0012"
+            },
+            "data": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "structure"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Presence"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Present",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1024"
+                    }
+                  },
+                  "archetype_node_id": "at1005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Rate"
+                  },
+                  "value": {
+                    "_type": "DV_QUANTITY",
+                    "units": "/min",
+                    "magnitude": 500
+                  },
+                  "archetype_node_id": "at0004"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Regularity"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0006"
+                    }
+                  },
+                  "archetype_node_id": "at0005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Irregular type"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regularly Irregular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0007"
+                    }
+                  },
+                  "archetype_node_id": "at1055"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Character"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1030"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Clinical description"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1022"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Clinical interpretation",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1057"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Rhythm",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1058"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Comment"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1059"
+                }
+              ],
+              "archetype_node_id": "at0001"
+            },
+            "width": {
+              "_type": "DV_DURATION",
+              "value": "PT0S"
+            },
+            "math_function": {
+              "_type": "DV_CODED_TEXT",
+              "value": "maximum",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "openehr"
+                },
+                "code_string": "144"
+              }
+            },
+            "archetype_node_id": "at1036"
+          },
+          {
+            "_type": "INTERVAL_EVENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Any event"
+            },
+            "time": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "state": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "List"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Position"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Standing/upright",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1003"
+                    }
+                  },
+                  "archetype_node_id": "at0013"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Confounding factors"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1018"
+                }
+              ],
+              "archetype_node_id": "at0012"
+            },
+            "data": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "structure"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Presence"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Present",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1024"
+                    }
+                  },
+                  "archetype_node_id": "at1005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Rate"
+                  },
+                  "value": {
+                    "_type": "DV_QUANTITY",
+                    "units": "/min",
+                    "magnitude": 500
+                  },
+                  "archetype_node_id": "at0004"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Regularity"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0006"
+                    }
+                  },
+                  "archetype_node_id": "at0005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Irregular type"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regularly Irregular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0007"
+                    }
+                  },
+                  "archetype_node_id": "at1055"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Character"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1030"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Clinical description"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1022"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Clinical interpretation",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1057"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Rhythm",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1058"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Comment"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1059"
+                }
+              ],
+              "archetype_node_id": "at0001"
+            },
+            "width": {
+              "_type": "DV_DURATION",
+              "value": "PT42H"
+            },
+            "math_function": {
+              "_type": "DV_CODED_TEXT",
+              "value": "minimum",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "openehr"
+                },
+                "code_string": "145"
+              }
+            },
+            "archetype_node_id": "at0003"
+          },
+          {
+            "_type": "POINT_EVENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Any event"
+            },
+            "time": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "state": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "List"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Position"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Standing/upright",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1003"
+                    }
+                  },
+                  "archetype_node_id": "at0013"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Confounding factors"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1018"
+                }
+              ],
+              "archetype_node_id": "at0012"
+            },
+            "data": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "structure"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Presence"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Present",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1024"
+                    }
+                  },
+                  "archetype_node_id": "at1005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Rate"
+                  },
+                  "value": {
+                    "_type": "DV_QUANTITY",
+                    "units": "/min",
+                    "magnitude": 500
+                  },
+                  "archetype_node_id": "at0004"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Regularity"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0006"
+                    }
+                  },
+                  "archetype_node_id": "at0005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Irregular type"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regularly Irregular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0007"
+                    }
+                  },
+                  "archetype_node_id": "at1055"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Character"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1030"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Clinical description"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1022"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Clinical interpretation",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1057"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Rhythm",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1058"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Comment"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1059"
+                }
+              ],
+              "archetype_node_id": "at0001"
+            },
+            "archetype_node_id": "at0003"
+          },
+          {
+            "_type": "INTERVAL_EVENT",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Any event"
+            },
+            "time": {
+              "_type": "DV_DATE_TIME",
+              "value": "2022-02-03T04:05:06"
+            },
+            "state": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "List"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Position"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Standing/upright",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1003"
+                    }
+                  },
+                  "archetype_node_id": "at0013"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Confounding factors"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1018"
+                }
+              ],
+              "archetype_node_id": "at0012"
+            },
+            "data": {
+              "_type": "ITEM_TREE",
+              "name": {
+                "_type": "DV_TEXT",
+                "value": "structure"
+              },
+              "items": [
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Presence"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Present",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1024"
+                    }
+                  },
+                  "archetype_node_id": "at1005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Rate"
+                  },
+                  "value": {
+                    "_type": "DV_QUANTITY",
+                    "units": "/min",
+                    "magnitude": 500
+                  },
+                  "archetype_node_id": "at0004"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Regularity"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0006"
+                    }
+                  },
+                  "archetype_node_id": "at0005"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Irregular type"
+                  },
+                  "value": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Regularly Irregular",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at0007"
+                    }
+                  },
+                  "archetype_node_id": "at1055"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Character"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1030"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Clinical description"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1022"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Clinical interpretation",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1057"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_CODED_TEXT",
+                    "value": "Rhythm",
+                    "defining_code": {
+                      "_type": "CODE_PHRASE",
+                      "terminology_id": {
+                        "_type": "TERMINOLOGY_ID",
+                        "value": "local"
+                      },
+                      "code_string": "at1058"
+                    }
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1023"
+                },
+                {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Comment"
+                  },
+                  "value": {
+                    "_type": "DV_TEXT",
+                    "value": "Lorem ipsum"
+                  },
+                  "archetype_node_id": "at1059"
+                }
+              ],
+              "archetype_node_id": "at0001"
+            },
+            "width": {
+              "_type": "DV_DURATION",
+              "value": "PT42H"
+            },
+            "math_function": {
+              "_type": "DV_CODED_TEXT",
+              "value": "minimum",
+              "defining_code": {
+                "_type": "CODE_PHRASE",
+                "terminology_id": {
+                  "_type": "TERMINOLOGY_ID",
+                  "value": "openehr"
+                },
+                "code_string": "145"
+              }
+            },
+            "archetype_node_id": "at0003"
+          }
+        ],
+        "archetype_node_id": "at0002"
+      },
+      "archetype_node_id": "openEHR-EHR-OBSERVATION.pulse.v2"
+    },
+    {
+      "_type": "OBSERVATION",
+      "name": {
+        "_type": "DV_TEXT",
         "value": "Pulse oximetry"
       },
       "archetype_details": {
@@ -1998,7 +3025,8 @@
                   "value": {
                     "_type": "DV_QUANTITY",
                     "units": "mm[Hg]",
-                    "magnitude": 500
+                    "magnitude": 500,
+                    "value": 118
                   },
                   "archetype_node_id": "at0004"
                 },
@@ -2011,7 +3039,8 @@
                   "value": {
                     "_type": "DV_QUANTITY",
                     "units": "mm[Hg]",
-                    "magnitude": 500
+                    "magnitude": 500,
+                    "value": 72
                   },
                   "archetype_node_id": "at0005"
                 },
@@ -2641,1034 +3670,6 @@
         "archetype_node_id": "at0001"
       },
       "archetype_node_id": "openEHR-EHR-OBSERVATION.blood_pressure.v2"
-    },
-    {
-      "_type": "OBSERVATION",
-      "name": {
-        "_type": "DV_TEXT",
-        "value": "Pulse/Heart beat"
-      },
-      "archetype_details": {
-        "archetype_id": {
-          "value": "openEHR-EHR-OBSERVATION.pulse.v2"
-        },
-        "rm_version": "1.0.4"
-      },
-      "language": {
-        "_type": "CODE_PHRASE",
-        "terminology_id": {
-          "_type": "TERMINOLOGY_ID",
-          "value": "ISO_639-1"
-        },
-        "code_string": "en"
-      },
-      "encoding": {
-        "_type": "CODE_PHRASE",
-        "terminology_id": {
-          "_type": "TERMINOLOGY_ID",
-          "value": "IANA_character-sets"
-        },
-        "code_string": "ISO-10646-UTF-1"
-      },
-      "workflow_id": {
-        "_type": "OBJECT_REF",
-        "namespace": "unknown",
-        "type": "ANY",
-        "id": {
-          "_type": "GENERIC_ID",
-          "value": "a7d5d814-c20a-3aa2-930a-1cae77f1924e",
-          "scheme": "scheme"
-        }
-      },
-      "subject": {
-        "_type": "PARTY_SELF"
-      },
-      "provider": {
-        "_type": "PARTY_SELF"
-      },
-      "protocol": {
-        "_type": "ITEM_TREE",
-        "name": {
-          "_type": "DV_TEXT",
-          "value": "List"
-        },
-        "items": [
-          {
-            "_type": "ELEMENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Method"
-            },
-            "value": {
-              "_type": "DV_CODED_TEXT",
-              "value": "Palpation",
-              "defining_code": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "local"
-                },
-                "code_string": "at1032"
-              }
-            },
-            "archetype_node_id": "at1019"
-          },
-          {
-            "_type": "ELEMENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Body site"
-            },
-            "value": {
-              "_type": "DV_CODED_TEXT",
-              "value": "Radial Artery - Left",
-              "defining_code": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "local"
-                },
-                "code_string": "at1038"
-              }
-            },
-            "archetype_node_id": "at1037"
-          }
-        ],
-        "archetype_node_id": "at0010"
-      },
-      "guideline_id": {
-        "_type": "OBJECT_REF",
-        "namespace": "unknown",
-        "type": "ANY",
-        "id": {
-          "_type": "GENERIC_ID",
-          "value": "99cf6910-fad9-33fb-91c7-e1520dd39a27",
-          "scheme": "scheme"
-        }
-      },
-      "data": {
-        "name": {
-          "_type": "DV_TEXT",
-          "value": "history"
-        },
-        "origin": {
-          "_type": "DV_DATE_TIME",
-          "value": "2022-02-03T04:05:06"
-        },
-        "period": {
-          "_type": "DV_DURATION",
-          "value": "PT0S"
-        },
-        "duration": {
-          "_type": "DV_DURATION",
-          "value": "PT0S"
-        },
-        "events": [
-          {
-            "_type": "INTERVAL_EVENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Maximum"
-            },
-            "time": {
-              "_type": "DV_DATE_TIME",
-              "value": "2022-02-03T04:05:06"
-            },
-            "state": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "List"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Position"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Standing/upright",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1003"
-                    }
-                  },
-                  "archetype_node_id": "at0013"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Confounding factors"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1018"
-                }
-              ],
-              "archetype_node_id": "at0012"
-            },
-            "data": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "structure"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Presence"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Present",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1024"
-                    }
-                  },
-                  "archetype_node_id": "at1005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Rate"
-                  },
-                  "value": {
-                    "_type": "DV_QUANTITY",
-                    "units": "/min",
-                    "magnitude": 500,
-                    "value": 100
-                  },
-                  "archetype_node_id": "at0004"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Regularity"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0006"
-                    }
-                  },
-                  "archetype_node_id": "at0005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Irregular type"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regularly Irregular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0007"
-                    }
-                  },
-                  "archetype_node_id": "at1055"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Character"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1030"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Clinical description"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1022"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Clinical interpretation",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1057"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Rhythm",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1058"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Comment"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "4l O₂"
-                  },
-                  "archetype_node_id": "at1059"
-                }
-              ],
-              "archetype_node_id": "at0001"
-            },
-            "width": {
-              "_type": "DV_DURATION",
-              "value": "PT0S"
-            },
-            "math_function": {
-              "_type": "DV_CODED_TEXT",
-              "value": "maximum",
-              "defining_code": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "openehr"
-                },
-                "code_string": "144"
-              }
-            },
-            "archetype_node_id": "at1036"
-          },
-          {
-            "_type": "INTERVAL_EVENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Any event"
-            },
-            "time": {
-              "_type": "DV_DATE_TIME",
-              "value": "2022-02-03T04:05:06"
-            },
-            "state": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "List"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Position"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Standing/upright",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1003"
-                    }
-                  },
-                  "archetype_node_id": "at0013"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Confounding factors"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1018"
-                }
-              ],
-              "archetype_node_id": "at0012"
-            },
-            "data": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "structure"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Presence"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Present",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1024"
-                    }
-                  },
-                  "archetype_node_id": "at1005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Rate"
-                  },
-                  "value": {
-                    "_type": "DV_QUANTITY",
-                    "units": "/min",
-                    "magnitude": 500
-                  },
-                  "archetype_node_id": "at0004"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Regularity"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0006"
-                    }
-                  },
-                  "archetype_node_id": "at0005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Irregular type"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regularly Irregular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0007"
-                    }
-                  },
-                  "archetype_node_id": "at1055"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Character"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1030"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Clinical description"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1022"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Clinical interpretation",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1057"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Rhythm",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1058"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Comment"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1059"
-                }
-              ],
-              "archetype_node_id": "at0001"
-            },
-            "width": {
-              "_type": "DV_DURATION",
-              "value": "PT42H"
-            },
-            "math_function": {
-              "_type": "DV_CODED_TEXT",
-              "value": "minimum",
-              "defining_code": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "openehr"
-                },
-                "code_string": "145"
-              }
-            },
-            "archetype_node_id": "at0003"
-          },
-          {
-            "_type": "POINT_EVENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Any event"
-            },
-            "time": {
-              "_type": "DV_DATE_TIME",
-              "value": "2022-02-03T04:05:06"
-            },
-            "state": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "List"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Position"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Standing/upright",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1003"
-                    }
-                  },
-                  "archetype_node_id": "at0013"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Confounding factors"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1018"
-                }
-              ],
-              "archetype_node_id": "at0012"
-            },
-            "data": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "structure"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Presence"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Present",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1024"
-                    }
-                  },
-                  "archetype_node_id": "at1005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Rate"
-                  },
-                  "value": {
-                    "_type": "DV_QUANTITY",
-                    "units": "/min",
-                    "magnitude": 500
-                  },
-                  "archetype_node_id": "at0004"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Regularity"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0006"
-                    }
-                  },
-                  "archetype_node_id": "at0005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Irregular type"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regularly Irregular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0007"
-                    }
-                  },
-                  "archetype_node_id": "at1055"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Character"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1030"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Clinical description"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1022"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Clinical interpretation",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1057"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Rhythm",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1058"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Comment"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1059"
-                }
-              ],
-              "archetype_node_id": "at0001"
-            },
-            "archetype_node_id": "at0003"
-          },
-          {
-            "_type": "INTERVAL_EVENT",
-            "name": {
-              "_type": "DV_TEXT",
-              "value": "Any event"
-            },
-            "time": {
-              "_type": "DV_DATE_TIME",
-              "value": "2022-02-03T04:05:06"
-            },
-            "state": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "List"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Position"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Standing/upright",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1003"
-                    }
-                  },
-                  "archetype_node_id": "at0013"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Confounding factors"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1018"
-                }
-              ],
-              "archetype_node_id": "at0012"
-            },
-            "data": {
-              "_type": "ITEM_TREE",
-              "name": {
-                "_type": "DV_TEXT",
-                "value": "structure"
-              },
-              "items": [
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Presence"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Present",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1024"
-                    }
-                  },
-                  "archetype_node_id": "at1005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Rate"
-                  },
-                  "value": {
-                    "_type": "DV_QUANTITY",
-                    "units": "/min",
-                    "magnitude": 500
-                  },
-                  "archetype_node_id": "at0004"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Regularity"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0006"
-                    }
-                  },
-                  "archetype_node_id": "at0005"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Irregular type"
-                  },
-                  "value": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Regularly Irregular",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at0007"
-                    }
-                  },
-                  "archetype_node_id": "at1055"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Character"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1030"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Clinical description"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1022"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Clinical interpretation",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1057"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_CODED_TEXT",
-                    "value": "Rhythm",
-                    "defining_code": {
-                      "_type": "CODE_PHRASE",
-                      "terminology_id": {
-                        "_type": "TERMINOLOGY_ID",
-                        "value": "local"
-                      },
-                      "code_string": "at1058"
-                    }
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1023"
-                },
-                {
-                  "_type": "ELEMENT",
-                  "name": {
-                    "_type": "DV_TEXT",
-                    "value": "Comment"
-                  },
-                  "value": {
-                    "_type": "DV_TEXT",
-                    "value": "Lorem ipsum"
-                  },
-                  "archetype_node_id": "at1059"
-                }
-              ],
-              "archetype_node_id": "at0001"
-            },
-            "width": {
-              "_type": "DV_DURATION",
-              "value": "PT42H"
-            },
-            "math_function": {
-              "_type": "DV_CODED_TEXT",
-              "value": "minimum",
-              "defining_code": {
-                "_type": "CODE_PHRASE",
-                "terminology_id": {
-                  "_type": "TERMINOLOGY_ID",
-                  "value": "openehr"
-                },
-                "code_string": "145"
-              }
-            },
-            "archetype_node_id": "at0003"
-          }
-        ],
-        "archetype_node_id": "at0002"
-      },
-      "archetype_node_id": "openEHR-EHR-OBSERVATION.pulse.v2"
     }
   ],
   "archetype_node_id": "openEHR-EHR-COMPOSITION.encounter.v1"
