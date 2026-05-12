@@ -75,16 +75,6 @@
           "moduleId": "wellsscore",
           "dateTime": "2026-04-29T17:31:00",
           "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/openEHR-EHR-EVALUATION/wells_score/wellsscore.json"
-        },
-        {
-          "moduleId": "lungenembolie_phase_2:_labordiagnostik",
-          "dateTime": "2026-04-29T15:10:00",
-          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_DiagnosticReportLab.v1.1.1/lungenembolie_phase_2:_labordiagnostik.json"
-        },
-        {
-          "moduleId": "blood_pressure",
-          "dateTime": "2026-04-29T12:37:00",
-          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/openEHR-EHR-OBSERVATION/blood_pressure.v2/blood_pressure.json"
         }
       ],
       "collapsed": false
@@ -98,7 +88,18 @@
       "stationDisplay": "Notaufnahme",
       "diagnosisCode": "I26",
       "diagnosisDisplay": "Lungenembolie",
-      "modules": [],
+      "modules": [
+        {
+          "moduleId": "blood_pressure",
+          "dateTime": "2026-04-29T21:58:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/openEHR-EHR-OBSERVATION/blood_pressure.v2/blood_pressure.json"
+        },
+        {
+          "moduleId": "lungenembolie_phase_2:_labordiagnostik",
+          "dateTime": "2026-04-29T13:33:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_DiagnosticReportLab.v1.1.1/lungenembolie_phase_2:_labordiagnostik.json"
+        }
+      ],
       "collapsed": false
     },
     {
