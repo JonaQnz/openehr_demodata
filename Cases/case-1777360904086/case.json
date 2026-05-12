@@ -126,7 +126,28 @@
       "stationDisplay": "IMC",
       "diagnosisCode": "I26",
       "diagnosisDisplay": "Lungenembolie",
-      "modules": [],
+      "modules": [
+        {
+          "moduleId": "therapieeinleitung_imc_antikoagulation",
+          "dateTime": "2026-04-29T08:53:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_ServiceRequestLab.v1.1.0/therapieeinleitung_imc_antikoagulation.json"
+        },
+        {
+          "moduleId": "mobilisation_nach_bettruhe",
+          "dateTime": "2026-04-29T07:58:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_ServiceRequestLab.v1.1.0/mobilisation_nach_bettruhe.json"
+        },
+        {
+          "moduleId": "\"lagerung_oberkörper_erhöht\"",
+          "dateTime": "2026-04-29T11:00:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_ServiceRequestLab.v1.1.0/\"lagerung_oberkörper_erhöht\".json"
+        },
+        {
+          "moduleId": "\"kontinuierliche_blutdrucküberwachung\"",
+          "dateTime": "2026-04-29T20:57:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_ServiceRequestLab.v1.1.0/\"kontinuierliche_blutdrucküberwachung\".json"
+        }
+      ],
       "collapsed": false
     },
     {
@@ -138,7 +159,13 @@
       "stationDisplay": "Normalstation",
       "diagnosisCode": "I26",
       "diagnosisDisplay": "Lungenembolie",
-      "modules": [],
+      "modules": [
+        {
+          "moduleId": "entlassfähigkeitsprüfung_lungenembolie",
+          "dateTime": "2026-05-01T13:01:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_progessnote.0.0.1/entlassfähigkeitsprüfung_lungenembolie.json"
+        }
+      ],
       "collapsed": false
     },
     {
