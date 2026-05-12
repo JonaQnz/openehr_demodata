@@ -98,6 +98,21 @@
           "moduleId": "lungenembolie_phase_2:_labordiagnostik",
           "dateTime": "2026-04-29T13:33:00",
           "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_DiagnosticReportLab.v1.1.1/lungenembolie_phase_2:_labordiagnostik.json"
+        },
+        {
+          "moduleId": "ct-pulmonalisangiografie_(ctpa)",
+          "dateTime": "2026-04-29T13:40:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_Sonography.v2.0.0/ct-pulmonalisangiografie_(ctpa).json"
+        },
+        {
+          "moduleId": "kompressionssonografie_beinvenen",
+          "dateTime": "2026-04-29T13:58:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_Sonography.v2.0.0/kompressionssonografie_beinvenen.json"
+        },
+        {
+          "moduleId": "akute_lungenembolie_mit_zentraler_und_segmentaler_beteiligung_beidseits_(i26.0)",
+          "dateTime": "2026-04-29T18:20:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_Diagnosis.v1.1.0/akute_lungenembolie_mit_zentraler_und_segmentaler_beteiligung_beidseits_(i26.0).json"
         }
       ],
       "collapsed": false
