@@ -1,0 +1,54 @@
+{
+  "id": "case-1778584894255",
+  "title": "Test5",
+  "templateId": "treetop_pulmonary_embolism_workflow_result",
+  "masterData": {
+    "identifier": "N059982197",
+    "family": "Mustermann",
+    "given": "Max",
+    "birthDate": "1980-01-01",
+    "gender": "male",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postalCode": "10115",
+    "country": "DE"
+  },
+  "stays": [
+    {
+      "id": "stay-1778584894255",
+      "label": "Aufenthalt 1",
+      "startDate": "2026-05-12",
+      "endDate": "2026-05-17",
+      "stationCode": "0100",
+      "stationDisplay": "Innere Medizin",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "",
+      "modules": [
+        {
+          "moduleId": "wells_criteria_pulmonary_embolism",
+          "dateTime": "2026-05-14T15:53:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/openEHR-EHR-EVALUATION/wells_criteria_for_pulmonary_embolism_assessment.v0/wells_criteria_pulmonary_embolism.json"
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "stay-1778584897879",
+      "label": "Aufenthalt 2",
+      "startDate": "2026-05-17",
+      "endDate": "2026-05-22",
+      "stationCode": "0100",
+      "stationDisplay": "Innere Medizin",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "",
+      "modules": [
+        {
+          "moduleId": "therapievorschlag_ingwertee",
+          "dateTime": "2026-05-19T09:33:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/openEHR-EHR-EVALUATION/recommendation.v2/therapievorschlag_ingwertee.json"
+        }
+      ],
+      "collapsed": false
+    }
+  ]
+}
