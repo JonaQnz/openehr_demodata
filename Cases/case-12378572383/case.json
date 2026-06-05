@@ -1,0 +1,92 @@
+{
+  "id": "case-stroke-emilie-goldmund-001",
+  "title": "Testfall Emilie Goldmund",
+  "templateId": "DE-STROKE",
+  "masterData": {
+    "ehrId": "ehr-demo-stroke-emilie-goldmund-001",
+    "patientName": "Emilie Goldmund",
+    "birthDate": "1954-02-18",
+    "gender": "female",
+    "identifier": "N7326401958",
+    "given": "Emilie",
+    "family": "Goldmund",
+    "street": "Morgenlandweg 12",
+    "postalCode": "72070",
+    "city": "Tübingen",
+    "country": "Deutschland"
+  },
+  "stays": [
+    {
+      "id": "stay-stroke-praehospital",
+      "label": "Prähospital",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-01",
+      "stationCode": "RTW",
+      "stationDisplay": "Rettungsdienst / Notarzt",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Hirninfarkt durch Embolie zerebraler Arterien",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-stroke-zna",
+      "label": "ZNA / Akutdiagnostik",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-01",
+      "stationCode": "0100",
+      "stationDisplay": "Zentrale Notaufnahme",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Hirninfarkt durch Embolie zerebraler Arterien",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-stroke-intervention",
+      "label": "Intervention",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-01",
+      "stationCode": "ANGIO",
+      "stationDisplay": "Interventionelle Neuroradiologie",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Akuter M1-Mediainfarkt links",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-stroke-stroke-unit",
+      "label": "Stroke Unit",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-04",
+      "stationCode": "STROKE",
+      "stationDisplay": "Stroke Unit",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Akuter M1-Mediainfarkt links",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-stroke-normalstation",
+      "label": "Normalstation",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-08",
+      "stationCode": "0200",
+      "stationDisplay": "Neurologische Normalstation",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Zustand nach Lyse und Thrombektomie bei Mediainfarkt links",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-stroke-nachsorge",
+      "label": "Nachsorge",
+      "startDate": "2026-04-08",
+      "endDate": "2026-06-30",
+      "stationCode": "AMB",
+      "stationDisplay": "Ambulante Nachsorge / 90-Tage-Follow-up",
+      "diagnosisCode": "I63.4",
+      "diagnosisDisplay": "Sekundärprophylaxe nach kardioembolischem Schlaganfall",
+      "modules": [],
+      "collapsed": false
+    }
+  ]
+}
