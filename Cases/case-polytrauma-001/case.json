@@ -1,7 +1,7 @@
 {
   "id": "case-polytrauma-001",
   "title": "Polytrauma Motorradfahrer",
-  "templateId": "vg_ServiceRequestLab.v1.1.0",
+  "templateId": "vg_Diagnosis.v1.1.1",
   "masterData": {
     "ehrId": "ehr-demo-polytrauma-emil-sinclair-001",
     "patientName": "Emil Sinclair",
@@ -25,13 +25,7 @@
       "stationDisplay": "Präklinik",
       "diagnosisCode": "T07",
       "diagnosisDisplay": "Polytrauma nach Motorradunfall",
-      "modules": [
-        {
-          "moduleId": "\"kontinuierliche_blutdrucküberwachung\"",
-          "dateTime": "2026-05-11T21:43:00",
-          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_ServiceRequestLab.v1.1.0/\"kontinuierliche_blutdrucküberwachung\".json"
-        }
-      ],
+      "modules": [],
       "collapsed": false
     },
     {
@@ -103,7 +97,13 @@
       "stationDisplay": "Reha",
       "diagnosisCode": "Z50.8",
       "diagnosisDisplay": "Rehabilitation nach Polytrauma",
-      "modules": [],
+      "modules": [
+        {
+          "moduleId": "diagnosis1.1.1tempvalue",
+          "dateTime": "2026-06-10T17:06:00",
+          "githubUrl": "https://raw.githubusercontent.com/JonaQnz/openehr_demodata/main/modules/vg_Diagnosis.v1.1.1/diagnosis1.1.1tempvalue.json"
+        }
+      ],
       "collapsed": false
     }
   ]
