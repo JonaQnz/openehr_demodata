@@ -1,0 +1,104 @@
+{
+  "id": "case-polytrauma-001",
+  "title": "Polytrauma Motorradfahrer",
+  "templateId": "Key_Symptoms",
+  "masterData": {
+    "ehrId": "",
+    "patientName": "Emil Sinclair",
+    "birthDate": "12-04-1991",
+    "gender": "male",
+    "identifier": "",
+    "given": "Emil",
+    "family": "Sinclair",
+    "street": "Kölner Straße",
+    "postalCode": "50678",
+    "city": "Calw",
+    "country": "Deutschland"
+  },
+  "stays": [
+    {
+      "id": "stay-polytrauma-praeklinik",
+      "label": "Präklinik",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "PRE",
+      "stationDisplay": "Präklinik",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Polytrauma nach Motorradunfall",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-schockraum",
+      "label": "Schockraum",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "0100",
+      "stationDisplay": "Schockraum / Notaufnahme",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Polytrauma mit hämorrhagischem Schock",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-op-damage-control",
+      "label": "Damage Control Surgery",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "OP",
+      "stationDisplay": "OP",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Milzruptur, instabiles Becken, offene Femurfraktur, Hämatopneumothorax",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-its",
+      "label": "Intensivstation",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "0300",
+      "stationDisplay": "Intensivstation",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Polytrauma mit Organversagen und Sepsis im Verlauf",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-definitive-versorgung",
+      "label": "Definitive Frakturversorgung",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "OP",
+      "stationDisplay": "OP",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Definitive Versorgung Beckenfraktur und Femurfraktur",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-normalstation",
+      "label": "Normalstation",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "0200",
+      "stationDisplay": "Normalstation",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Mobilisation nach Polytrauma",
+      "modules": [],
+      "collapsed": false
+    },
+    {
+      "id": "stay-polytrauma-reha",
+      "label": "Reha",
+      "startDate": "",
+      "endDate": "",
+      "stationCode": "REHA",
+      "stationDisplay": "Reha",
+      "diagnosisCode": "",
+      "diagnosisDisplay": "Rehabilitation nach Polytrauma",
+      "modules": [],
+      "collapsed": false
+    }
+  ]
+}
