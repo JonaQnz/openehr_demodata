@@ -3,15 +3,15 @@
   "title": "Polytrauma Motorradfahrer",
   "templateId": "Key_Symptoms",
   "masterData": {
-    "ehrId": "",
+    "ehrId": "ehr-demo-polytrauma-emil-sinclair-001",
     "patientName": "Emil Sinclair",
-    "birthDate": "12-04-1991",
+    "birthDate": "1991-04-12",
     "gender": "male",
-    "identifier": "",
+    "identifier": "N1847305129",
     "given": "Emil",
     "family": "Sinclair",
-    "street": "Kölner Straße",
-    "postalCode": "50678",
+    "street": "Kölner Straße 17",
+    "postalCode": "75365",
     "city": "Calw",
     "country": "Deutschland"
   },
@@ -19,11 +19,11 @@
     {
       "id": "stay-polytrauma-praeklinik",
       "label": "Präklinik",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-11",
       "stationCode": "PRE",
       "stationDisplay": "Präklinik",
-      "diagnosisCode": "",
+      "diagnosisCode": "T07",
       "diagnosisDisplay": "Polytrauma nach Motorradunfall",
       "modules": [],
       "collapsed": false
@@ -31,11 +31,11 @@
     {
       "id": "stay-polytrauma-schockraum",
       "label": "Schockraum",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-11",
       "stationCode": "0100",
       "stationDisplay": "Schockraum / Notaufnahme",
-      "diagnosisCode": "",
+      "diagnosisCode": "T79.4",
       "diagnosisDisplay": "Polytrauma mit hämorrhagischem Schock",
       "modules": [],
       "collapsed": false
@@ -43,11 +43,11 @@
     {
       "id": "stay-polytrauma-op-damage-control",
       "label": "Damage Control Surgery",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-12",
       "stationCode": "OP",
       "stationDisplay": "OP",
-      "diagnosisCode": "",
+      "diagnosisCode": "T07",
       "diagnosisDisplay": "Milzruptur, instabiles Becken, offene Femurfraktur, Hämatopneumothorax",
       "modules": [],
       "collapsed": false
@@ -55,11 +55,11 @@
     {
       "id": "stay-polytrauma-its",
       "label": "Intensivstation",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-12",
+      "endDate": "2026-05-20",
       "stationCode": "0300",
       "stationDisplay": "Intensivstation",
-      "diagnosisCode": "",
+      "diagnosisCode": "T07",
       "diagnosisDisplay": "Polytrauma mit Organversagen und Sepsis im Verlauf",
       "modules": [],
       "collapsed": false
@@ -67,11 +67,11 @@
     {
       "id": "stay-polytrauma-definitive-versorgung",
       "label": "Definitive Frakturversorgung",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-21",
+      "endDate": "2026-05-24",
       "stationCode": "OP",
       "stationDisplay": "OP",
-      "diagnosisCode": "",
+      "diagnosisCode": "S72.3",
       "diagnosisDisplay": "Definitive Versorgung Beckenfraktur und Femurfraktur",
       "modules": [],
       "collapsed": false
@@ -79,11 +79,11 @@
     {
       "id": "stay-polytrauma-normalstation",
       "label": "Normalstation",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-05-24",
+      "endDate": "2026-06-07",
       "stationCode": "0200",
       "stationDisplay": "Normalstation",
-      "diagnosisCode": "",
+      "diagnosisCode": "Z51.8",
       "diagnosisDisplay": "Mobilisation nach Polytrauma",
       "modules": [],
       "collapsed": false
@@ -91,14 +91,14 @@
     {
       "id": "stay-polytrauma-reha",
       "label": "Reha",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2026-06-08",
+      "endDate": "2026-08-02",
       "stationCode": "REHA",
       "stationDisplay": "Reha",
-      "diagnosisCode": "",
+      "diagnosisCode": "Z50.8",
       "diagnosisDisplay": "Rehabilitation nach Polytrauma",
       "modules": [],
       "collapsed": false
     }
   ]
-}
+}a
