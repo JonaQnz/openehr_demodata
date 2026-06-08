@@ -1,6 +1,6 @@
 {
   "id": "case-breast-siddhartha-001",
-  "title": "Testfall Brustkrebs",
+  "title": "Challenge: Brustkrebspatientin",
   "templateId": "vg_Diagnosis.v1.1.1",
   "masterData": {
     "ehrId": "ehr-demo-breast-kamala-berger-001",
