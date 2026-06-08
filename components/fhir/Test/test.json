@@ -1,0 +1,44 @@
+{
+  "resourceType": "Schedule",
+  "id": "schedule-radiologie-ct-01",
+  "identifier": [
+    {
+      "system": "https://example.org/fhir/schedule-identifiers",
+      "value": "RAD-CT-01"
+    }
+  ],
+  "active": true,
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/service-category",
+          "code": "17",
+          "display": "General Practice"
+        }
+      ],
+      "text": "Radiologie"
+    }
+  ],
+  "serviceType": [
+    {
+      "text": "CT-Untersuchung"
+    }
+  ],
+  "specialty": [
+    {
+      "text": "{{RANDOM_LIST:Radiology, Cardiology, Internal medicine, General practice}}"
+    }
+  ],
+  "actor": [
+    {
+      "reference": "Location/radiologie-ct-raum-01",
+      "display": "{{RANDOM_LIST:Radiologie CT Raum 1, Radiologie CT Raum 2, Radiologie CT Raum 3}}"
+    }
+  ],
+  "planningHorizon": {
+    "start": "2026-06-08T08:00:00+02:00",
+    "end": "2026-06-30T18:00:00+02:00"
+  },
+  "comment": "Terminplan für CT-Untersuchungen"
+}
