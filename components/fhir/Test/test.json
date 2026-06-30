@@ -30,12 +30,6 @@
       "text": "{{RANDOM_LIST:Radiology, Cardiology, Internal medicine, General practice}}"
     }
   ],
-  "actor": [
-    {
-      "reference": "Location/radiologie-ct-raum-01",
-      "display": "{{RANDOM_LIST:Radiologie CT Raum 1, Radiologie CT Raum 2, Radiologie CT Raum 3}}"
-    }
-  ],
   "planningHorizon": {
     "start": "2026-06-08T08:00:00+02:00",
     "end": "2026-06-30T18:00:00+02:00"
