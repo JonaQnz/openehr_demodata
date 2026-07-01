@@ -1,0 +1,152 @@
+[
+  {
+    "id": "emergency",
+    "name": "Notaufnahme",
+    "department": "Zentrale Notaufnahme"
+  },
+  {
+    "id": "icu",
+    "name": "Intensivstation",
+    "department": "Intensivmedizin"
+  },
+  {
+    "id": "imc",
+    "name": "Intermediate Care",
+    "department": "Intensivmedizin"
+  },
+  {
+    "id": "ward_internal",
+    "name": "Station Innere Medizin",
+    "department": "Innere Medizin"
+  },
+  {
+    "id": "ward_cardiology",
+    "name": "Station Kardiologie",
+    "department": "Kardiologie"
+  },
+  {
+    "id": "ward_neurology",
+    "name": "Station Neurologie",
+    "department": "Neurologie"
+  },
+  {
+    "id": "ward_surgery",
+    "name": "Station Allgemeinchirurgie",
+    "department": "Chirurgie"
+  },
+  {
+    "id": "ward_orthopedics",
+    "name": "Station Orthopädie",
+    "department": "Orthopädie"
+  },
+  {
+    "id": "ward_trauma",
+    "name": "Station Unfallchirurgie",
+    "department": "Unfallchirurgie"
+  },
+  {
+    "id": "ward_oncology",
+    "name": "Station Onkologie",
+    "department": "Onkologie"
+  },
+  {
+    "id": "ward_pulmonology",
+    "name": "Station Pneumologie",
+    "department": "Pneumologie"
+  },
+  {
+    "id": "ward_gastro",
+    "name": "Station Gastroenterologie",
+    "department": "Gastroenterologie"
+  },
+  {
+    "id": "ward_nephrology",
+    "name": "Station Nephrologie",
+    "department": "Nephrologie"
+  },
+  {
+    "id": "ward_geriatrics",
+    "name": "Station Geriatrie",
+    "department": "Geriatrie"
+  },
+  {
+    "id": "ward_pediatrics",
+    "name": "Station Pädiatrie",
+    "department": "Kinder- und Jugendmedizin"
+  },
+  {
+    "id": "ward_obgyn",
+    "name": "Station Gynäkologie",
+    "department": "Frauenheilkunde"
+  },
+  {
+    "id": "ward_psychiatry",
+    "name": "Station Psychiatrie",
+    "department": "Psychiatrie"
+  },
+  {
+    "id": "ward_rehab",
+    "name": "Frührehabilitation",
+    "department": "Rehabilitationsmedizin"
+  },
+  {
+    "id": "operating_room",
+    "name": "OP-Bereich",
+    "department": "Operationszentrum"
+  },
+  {
+    "id": "recovery",
+    "name": "Aufwachraum",
+    "department": "Anästhesie"
+  },
+  {
+    "id": "radiology",
+    "name": "Radiologie",
+    "department": "Radiologie"
+  },
+  {
+    "id": "ct",
+    "name": "CT",
+    "department": "Radiologie"
+  },
+  {
+    "id": "mri",
+    "name": "MRT",
+    "department": "Radiologie"
+  },
+  {
+    "id": "angiography",
+    "name": "Angiographie",
+    "department": "Radiologie"
+  },
+  {
+    "id": "cardiac_cath_lab",
+    "name": "Herzkatheterlabor",
+    "department": "Kardiologie"
+  },
+  {
+    "id": "endoscopy",
+    "name": "Endoskopie",
+    "department": "Gastroenterologie"
+  },
+  {
+    "id": "dialysis",
+    "name": "Dialyse",
+    "department": "Nephrologie"
+  },
+  {
+    "id": "labor",
+    "name": "Labor",
+    "department": "Labormedizin"
+  },
+  {
+    "id": "pathology",
+    "name": "Pathologie",
+    "department": "Pathologie"
+  },
+  {
+    "id": "discharge_lounge",
+    "name": "Entlassungsbereich",
+    "department": "Patientenmanagement"
+  }
+]
