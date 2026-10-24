@@ -1,0 +1,16 @@
+# Created by AI Dev Home project init - review type, test command and docs.
+schema_version: 1
+id: openehr_demodata
+name: openehr_demodata
+description: ''
+type: library
+repository:
+  default_branch: main
+  integration_branch: develop
+stack:
+- python
+test:
+  unit: 'TODO: set the unit test command'
+docs:
+  readme: README.md
+  agents: AGENTS.md

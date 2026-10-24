@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+# AI Dev Home: secrets and runtime files stay out of Git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+.omc/
+.pytest_cache/
